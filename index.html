@@ -376,6 +376,17 @@
   </head>
 
   <body>
+
+<script>
+        // Функция, чтобы скрыть клавиатуру
+        document.addEventListener('click', function(event) {
+            const textarea = document.querySelector('textarea');
+            if (!textarea.contains(event.target)) {
+                textarea.blur(); // Убираем фокус с текстовой области
+            }
+        });
+    </script>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"><div id="header" style="padding: 0px 18px; display: flex; align-items: center; height: 48px; position: fixed; top: 0px; width: 100%; z-index: 1000; background: rgb(243, 235, 234);"><button class="sc-euGpHm dmEXtJ" style="position: relative;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="header-icon"><path d="M1.5 12C3.21429 12.3 9.64286 13.2 13.5 18" stroke="#2C3034" stroke-width="3" stroke-linecap="round"></path><path d="M1.5 12C3.21429 11.7 9.64286 10.8 13.5 6" stroke="#2C3034" stroke-width="3" stroke-linecap="round"></path><path d="M2.5 12H22.5" stroke="#2C3034" stroke-width="3" stroke-linecap="round"></path></svg></button></div><div style="padding-top: 48px; height: 100%;"><div class="sc-hlDWUt XVfMs" style="justify-content: flex-start; align-items: flex-start;"><h1 class="sc-knesRu eKTqjS" style="white-space: pre;">Recover using
 Seed Phrase</h1><p class="sc-fQpRED kbdras" style="margin-top: 8px; margin-bottom: 22px;">Enter the backup passphrase associated with the account.</p><div style="width: 100%;"><label class="sc-liquwA cCvEnc" style="padding-top: 25px; padding-bottom: 12px;"><p class="sc-kXWJUi hUFNqE">Seed or private key</p><textarea autocapitalize="off" autocorrect="off" autocomplete="off" style="height: 100px; width: 100%;"></textarea></label></div><div style="margin-top: auto; width: 100%;"><button disabled="" class="sc-pFPEP ckyQuD" style="width: 100%;">Continue</button></div></div></div></div>
